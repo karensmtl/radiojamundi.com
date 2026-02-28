@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADIO JAMUNDI</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+  <!-- ─── TICKER ───────────────────────────── -->
+  <div class="ticker_bar">
+    <div class="ticker_label">Ultima hora</div>
+    <div class="ticker_inner">
+      <div class="ticker_track">
+        <span>BARCELONA MADRID</span>
+        <span>COLOMBIA CLASIFICA AL MUNDIAL</span>
+        <span>NUEVO ALCALDE EN JAMUNDÍ</span>
+        <span>PRECIO DEL DÓLAR SUBE</span>
+        <span>BARCELONA MADRID</span>
+        <span>COLOMBIA CLASIFICA AL MUNDIAL</span>
+        <span>NUEVO ALCALDE EN JAMUNDÍ</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── HEADER ───────────────────────────── -->
+  <header>
+    <div class="header_top">
+      <div class="logo_top">
+        <a href="javascript:void(0)" class="logo_area" onclick="goHome()">
+          <img src="radio jamundi logo.png" alt="RADIO JAMUNDI" class="logo_img">
+        </a>
+      </div>
+      <div class="colecctions">
+        <div class="header_social">
+          <a href="https://www.facebook.com" title="facebook" target="_blank" rel="noopener">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.twitter.com" title="twitter" target="_blank" rel="noopener">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M22,5.8a8.2,8.2,0,0,1-2.4.7A4.2,4.2,0,0,0,21.4,4a8.3,8.3,0,0,1-2.6,1A4.1,4.1,0,0,0,11.2,7a11.6,11.6,0,0,1-8.4-4.3A4.1,4.1,0,0,0,3.3,9a4.1,4.1,0,0,1-1.9-.5v.1a4.1,4.1,0,0,0,3.3,4A4.2,4.2,0,0,1,.8,13v.1a4.1,4.1,0,0,0,3.3,4A8.2,8.2,0,0,1,2,17a11.6,11.6,0,0,0,6.3,1.8c7.5,0,11.6-6.2,11.6-11.6l-.01-.5A8.3,8.3,0,0,0,22,5.8Z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com" title="instagram" target="_blank" rel="noopener">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://www.youtube.com" title="youtube" target="_blank" rel="noopener">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/>
+              <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#fff"/>
+            </svg>
+          </a>
+        </div>
+        <a href="https://web.whatsapp.com/" class="bnt_contac" target="_blank" rel="noopener">CONTACTANOS</a>
+      </div>
+    </div>
+
+    <nav class="links_navegation">
+      <div class="nav_inner">
+        <ul class="nav_linka">
+          <li class="nav_list"><a href="javascript:void(0)" class="active" onclick="showHome(); setActive(this)">INICIO</a></li>
+          <li class="nav_list"><a href="javascript:void(0)" onclick="showHome('noticias'); setActive(this)">NOTICIAS</a></li>
+          <li class="nav_list"><a href="javascript:void(0)" onclick="showHome('deportes'); setActive(this)">DEPORTES</a></li>
+          <li class="nav_list"><a href="javascript:void(0)" onclick="showHome('cultura'); setActive(this)">CULTURA</a></li>
+          <li class="nav_list"><a href="javascript:void(0)" onclick="showHome('politica'); setActive(this)">POLÍTICA</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════
+       HOME
+  ═══════════════════════════════════════ -->
+  <div class="homePage">
+    <div class="page_wrap">
+
+      <div class="hero_grid" id="heroGrid">
+        <div class="hero_featured">
+          <div class="conteiner">
+            <div class="featured_img">
+              <img src="radio jamundi logo.png" alt="Radio Jamundí">
+            </div>
+            <div class="radio-visualizer">
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+              <div class="rv-bar"></div><div class="rv-bar"></div><div class="rv-bar"></div>
+            </div>
+            <div class="radio-play-area">
+              <button class="radio-play-btn" id="radioPlayBtn" onclick="toggleRadio()">
+                <span id="radioPlayIcon">▶</span>
+              </button>
+              <div class="radio-play-label" id="radioPlayLabel">Escuchar en vivo</div>
+              <audio id="miReproductor" style="display:none;">
+                <source src="https://icecast.radiofrance.fr/fip-midfi.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider_bar">
+          <div class="hero_side">
+            <div class="side_item" onclick="openArticle(2)">
+              <div class="side_item_num">01</div>
+              <div class="side_item_body">
+                <div class="side_item_title">Título del artículo 2</div>
+                <div class="side_item_desc">Descripción breve...</div>
+                <div class="site_item_date">12 de junio de 2024</div>
+              </div>
+            </div>
+            <div class="side_item" onclick="openArticle(3)">
+              <div class="side_item_num">02</div>
+              <div class="side_item_body">
+                <div class="side_item_title">Título del artículo 3</div>
+                <div class="side_item_desc">Descripción breve...</div>
+                <div class="site_item_date">12 de junio de 2024</div>
+              </div>
+            </div>
+            <div class="side_item" onclick="openArticle(4)">
+              <div class="side_item_num">03</div>
+              <div class="side_item_body">
+                <div class="side_item_title">Título del artículo 4</div>
+                <div class="side_item_desc">Descripción breve...</div>
+                <div class="site_item_date">12 de junio de 2024</div>
+              </div>
+            </div>
+            <div class="side_item" onclick="openArticle(5)">
+              <div class="side_item_num">04</div>
+              <div class="side_item_body">
+                <div class="side_item_title">Título del artículo 5</div>
+                <div class="side_item_desc">Descripción breve...</div>
+                <div class="site_item_date">12 de junio de 2024</div>
+              </div>
+            </div>
+            <div class="side_item" onclick="openArticle(6)">
+              <div class="side_item_num">05</div>
+              <div class="side_item_body">
+                <div class="side_item_title">Título del artículo 6</div>
+                <div class="side_item_desc">Descripción breve...</div>
+                <div class="site_item_date">12 de junio de 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two_col_layout">
+        <main>
+          <div class="section_head">
+            <h2 class="section_title">Últimas noticias</h2>
+            <div class="line_large"></div>
+            <span>HOY</span>
+          </div>
+          <div class="news_grid" id="homeNewsGrid">
+            <div class="news_card" onclick="openArticle(1)">
+              <div><img src="radio jamundi logo.png" alt=""></div>
+              <div class="new_card_cat">SALUD</div>
+              <div class="new_card_title"><span>Noticia de salud</span></div>
+              <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">Dra. Sandra Peña · Salud · Hace 4 horas</div>
+            </div>
+            <div class="news_card" onclick="openArticle(2)">
+              <div><img src="radio jamundi logo.png" alt=""></div>
+              <div class="new_card_cat">POLÍTICA</div>
+              <div class="new_card_title"><span>Noticia de política</span></div>
+              <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">Carlos Ruiz · Política · Hace 2 horas</div>
+            </div>
+            <div class="news_card" onclick="openArticle(3)">
+              <div><img src="radio jamundi logo.png" alt=""></div>
+              <div class="new_card_cat">DEPORTES</div>
+              <div class="new_card_title"><span>Noticia de deportes</span></div>
+              <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">Juan López · Deportes · Hace 1 hora</div>
+            </div>
+          </div>
+        </main>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       NOTICIAS
+  ═══════════════════════════════════════ -->
+  <div class="page_cat" id="catNoticias" style="display:none;">
+    <div class="cat_hero">
+      <div class="cat_hero_icon">📰</div>
+      <div class="cat_hero_text">
+        <h1><span class="cat-accent">N</span>OTICIAS</h1>
+        <p class="parraf">Todo lo que está pasando en Colombia y el mundo. Información verificada y actualizada.</p>
+      </div>
+    </div>
+    <div class="page_wrap">
+      <div class="cat_section_head">
+        <span class="cat_section_head_title">Últimas Noticias</span>
+        <span class="cat_section_head_btn">TODAS</span>
+      </div>
+      <div class="cat_grid fade_in">
+
+        <!-- Card destacada -->
+        <div class="cat_card featured" onclick="openArticle(4)">
+          <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+          <div class="cat_card_body">
+            <div class="cat_card_cat">DESTACADO</div>
+            <div class="cat_card_title">Noticia destacada del día en Colombia</div>
+            <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate reprehenderit quod aut facilis natus explicabo.</p>
+            <div class="autor">27 de febrero de 2026 · Dra. Sandra Peña</div>
+          </div>
+        </div>
+
+        <!-- Subgrilla 2 cols -->
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(5)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">NEGOCIOS</div>
+              <div class="cat_card_title">Segunda noticia de economía</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">26 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(6)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">EVENTOS</div>
+              <div class="cat_card_title">Tercer artículo de la sección</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">25 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(7)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">REGIONAL</div>
+              <div class="cat_card_title">Noticias del Valle del Cauca</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">24 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(8)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">NACIONAL</div>
+              <div class="cat_card_title">Colombia hoy: resumen informativo</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">23 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       DEPORTES
+  ═══════════════════════════════════════ -->
+  <div class="page_cat" id="catDeportes" style="display:none;">
+    <div class="cat_hero">
+      <div class="cat_hero_icon">⚽</div>
+      <div class="cat_hero_text">
+        <h1><span class="cat-accent">D</span>EPORTES</h1>
+        <p class="parraf">Resultados, fichajes y todo el deporte nacional e internacional en un solo lugar.</p>
+      </div>
+    </div>
+    <div class="page_wrap">
+      <div class="cat_section_head">
+        <span class="cat_section_head_title">Últimas en Deportes</span>
+        <span class="cat_section_head_btn">TODAS</span>
+      </div>
+      <div class="cat_grid fade_in">
+
+        <div class="cat_card featured" onclick="openArticle(10)">
+          <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+          <div class="cat_card_body">
+            <div class="cat_card_cat">FÚTBOL</div>
+            <div class="cat_card_title">Liga colombiana: resultados de la fecha</div>
+            <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate reprehenderit quod aut facilis natus.</p>
+            <div class="autor">27 de febrero de 2026 · Redacción Deportes</div>
+          </div>
+        </div>
+
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(11)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">CICLISMO</div>
+              <div class="cat_card_title">Colombianos brillan en Europa</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">26 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(12)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">BOXEO</div>
+              <div class="cat_card_title">Gran pelea esta noche en Cali</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">25 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(13)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">SELECCIÓN</div>
+              <div class="cat_card_title">Colombia convoca para eliminatorias</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">24 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(14)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">ATLETISMO</div>
+              <div class="cat_card_title">Récord nacional en los 100 metros</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">23 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       CULTURA
+  ═══════════════════════════════════════ -->
+  <div class="page_cat" id="catCultura" style="display:none;">
+    <div class="cat_hero">
+      <div class="cat_hero_icon">🎭</div>
+      <div class="cat_hero_text">
+        <h1><span class="cat-accent">C</span>ULTURA</h1>
+        <p class="parraf">Arte, música, cine y todo lo que mueve la identidad de nuestra región.</p>
+      </div>
+    </div>
+    <div class="page_wrap">
+      <div class="cat_section_head">
+        <span class="cat_section_head_title">Últimas en Cultura</span>
+        <span class="cat_section_head_btn">TODAS</span>
+      </div>
+      <div class="cat_grid fade_in">
+
+        <div class="cat_card featured" onclick="openArticle(20)">
+          <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+          <div class="cat_card_body">
+            <div class="cat_card_cat">MÚSICA</div>
+            <div class="cat_card_title">Festival de música del Pacífico regresa a Cali</div>
+            <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate reprehenderit quod aut facilis natus.</p>
+            <div class="autor">27 de febrero de 2026 · Redacción Cultura</div>
+          </div>
+        </div>
+
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(21)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">ARTE</div>
+              <div class="cat_card_title">Nueva exposición en el Museo La Tertulia</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">26 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(22)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">CINE</div>
+              <div class="cat_card_title">Película colombiana nominada en Cannes</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">25 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(23)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">LITERATURA</div>
+              <div class="cat_card_title">Feria del libro en Bogotá abre sus puertas</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">24 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(24)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">GASTRONOMÍA</div>
+              <div class="cat_card_title">Sabores del Valle: lo mejor de nuestra cocina</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">23 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════════
+       POLÍTICA
+  ═══════════════════════════════════════ -->
+  <div class="page_cat" id="catPolitica" style="display:none;">
+    <div class="cat_hero">
+      <div class="cat_hero_icon">🏛️</div>
+      <div class="cat_hero_text">
+        <h1><span class="cat-accent">P</span>OLÍTICA</h1>
+        <p class="parraf">Decisiones, debates y análisis del panorama político colombiano y regional.</p>
+      </div>
+    </div>
+    <div class="page_wrap">
+      <div class="cat_section_head">
+        <span class="cat_section_head_title">Últimas en Política</span>
+        <span class="cat_section_head_btn">TODAS</span>
+      </div>
+      <div class="cat_grid fade_in">
+
+        <div class="cat_card featured" onclick="openArticle(30)">
+          <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+          <div class="cat_card_body">
+            <div class="cat_card_cat">GOBIERNO</div>
+            <div class="cat_card_title">Reforma tributaria: lo que debes saber</div>
+            <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate reprehenderit quod aut facilis natus.</p>
+            <div class="autor">27 de febrero de 2026 · Redacción Política</div>
+          </div>
+        </div>
+
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(31)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">CONGRESO</div>
+              <div class="cat_card_title">Debate clave en el Senado hoy</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">26 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(32)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">LOCAL</div>
+              <div class="cat_card_title">Alcaldía de Jamundí anuncia nuevas obras</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">25 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cat_subgrid">
+          <div class="cat_card" onclick="openArticle(33)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">ELECCIONES</div>
+              <div class="cat_card_title">Próximas elecciones regionales: fechas clave</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">24 de febrero de 2026</div>
+            </div>
+          </div>
+          <div class="cat_card" onclick="openArticle(34)">
+            <div class="cat_card_img"><img src="radio jamundi logo.png" alt=""></div>
+            <div class="cat_card_body">
+              <div class="cat_card_cat">INTERNACIONAL</div>
+              <div class="cat_card_title">Colombia en la ONU: posición del gobierno</div>
+              <p class="cat_card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="autor">23 de febrero de 2026</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ─── SCRIPTS ───────────────────────────── -->
+  <script src="articulos.js"></script>
+
+
+</body>
+</html>
